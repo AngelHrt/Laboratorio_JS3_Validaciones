@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Validación de Formularios</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<h1>VALIDACION FORMULARIOS</h1>
+<form id="miFormulario">
+<div class="form-group">
+<label for="usuario" id="usuarioLabel">Usuario:</label>
+<input type="text" id="usuario" name="usuario" required>
+<span class="error" id="usuarioError"></span>
+</div>
+<div class="form-group">
+<label for="nombre">Nombre:</label>
+<input type="text" id="nombre" name="nombre" required>
+<span class="error" id="nombreError"></span>
+</div>
+<div class="form-group">
+<label for="contrasena">Contraseña:</label>
+<input type="password" id="contrasena" name="contrasena" required>
+<span class="error" id="contrasenaError"></span>
+</div>
+<div class="form-group">
+<label for="repetirContrasena" id="repetirContrasenaLabel">Repetir Contraseña:</label>
+<input type="password" id="repetirContrasena" name="repetirContrasena" required>
+<span class="error" id="repetirContrasenaError"></span>
+</div>
+<button type="submit">Enviar</button>
+</form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
